@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            // предварительная загрузка изображений
+            var klgd = $('<img />').attr('src','images/klngr.png');
+            var msk = $('<img />').attr('src','images/msk.png');
+            var spb = $('<img />').attr('src','images/spb.png');
+
+            $('div#imap > a').click(function(event){
+                var elId = $(this).attr('id');
+
+                switch(elId){
+                    case 'klgd' :
+                        $('#container:not(:has(img))').append(klgd);
+                        //elImgURI = img_props.klgd.uri;
+                        break;
+                    case 'spb' :
+                        $('#container:not(:has(img))').append(spb);
+                        //elImgURI = img_props.spb.uri;
+                        break;
+                    case 'msk' :
+                        $('#container:not(:has(img))').append(msk);
+                        //elImgURI = img_props.msk.uri;
+                        break;
+                    default: elImgURI = false;
+                }
+
+                // ширина контейнера
+                var contwidth = $('#container').width();
+                var contheight = $('#container').height();
+
+                var w_mrg = contwidth/2 + "px";
+                var h_mrg = contheight/2 + "px";
+
+                $('#container').show();
+                $('#container').css({'margin-left':'-'+w_mrg});
+                event.preventDefault();
+            });
+            $('div#container').click(function(event){
+                $('#container img').remove();
+                $('#container').hide();
+                event.preventDefault();
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-info ">
+    <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html"><button class="moving btn btn-info bg-gradient btn-md text-white" type="button">Главная</button></a>
+            <a class="text-white nav-item nav-link" href="article.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Занимательные статьи</button></a>
+            <a class="text-white nav-item nav-link" href="contact.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Контакты</button></a>
+        </div>
+    </div>
+</nav>
+
+<div id="imap">
+    <a href="#" id="klgd">Калининград</a>
+    <a href="#" id="spb">Санкт-Петербург</a>
+    <a href="#" id="msk">Москва</a>
+</div>
+<div id="container"></div>
+
+</body>
+</html>

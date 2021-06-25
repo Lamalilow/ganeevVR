@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Интерфейсы пользователя вирутальной реальности</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#menu" ).menu();
+        } );
+    </script>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Главная</button></a>
+                <a class="text-white nav-item nav-link" href="article.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Занимательные статьи</button></a>
+                <a class="text-white nav-item nav-link" href="contact.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Контакты</button></a>
+
+            </div>
+        </div>
+    </nav>
+    <div class= "container">
+        <h2 class="text-white">Интерфейсы пользователя вирутальной реальности </h2>
+        <img class="displayed" src="microchel.jpg" width="625" height="365">
+
+        <div class="counter">
+            <div class="block1">Количество заявок на покупку VR-сета</div>
+            <div class="block2">1488</div>
+        </div>
+        <div id="counterButton">Оставить заявку</div>
+        <script src="js/counter.js"></script>
+    </div>
+
+</header>
+
+<!-- Интерфейсы пользователя вирутальной реальности -->
+
+
+    <div class="container text-white">
+        <h2>  Классификация VR-приложений</h2>
+            <p>С точки зрения дизайнера каждое VR-приложение состоит из двух основных компонентов: среды и интерфейса.
+            Виртуальная среда — это тот мир, куда вы попадаете, надев VR-гарнитуру: планета, на которую вы высаживаетесь, или пейзаж, открывающийся вам, пока вы едете на американских горках.
+            </p>
+            <p>Интерфейс — это набор элементов, с которыми пользователь взаимодействует, чтобы ориентироваться в среде и управлять своим опытом. В зависимости от сложности этих двух компонентов все VR-приложения можно расположить в двумерной системе координат.
+            </p>
+        <p><a href="https://m.vk.com/tuchenka"><img src="vk.png" weight="20" height="20">  Мой VK</a></p>
+        <h2>Тест</h2>
+        <div class="d-flex">
+             <div>
+                <p>Email</p>
+                <form>
+                    <p><input type="email" name="email"> <input type="submit"></p>
+                </form>
+                <form action="handler.php">
+                    <p><b>Какая погода на улице?</b></p>
+                    <p><input name="pogoda" type="radio" value="solntse"> Солнце</p>
+                    <p><input name="pogoda" type="radio" value="tuchi"> Тучи</p>
+                    <p><input name="pogoda" type="radio" value="dojd"> Дождь</p>
+                    <p><input name="pogoda" type="radio" value="sneg" checked> Снег</p>
+                    <p><input type="submit" value="Выбрать"></p>
+                </form>
+             </div>
+            <div class="d-flex">
+                <ul id="menu">
+                    <li class="ui-state-disabled"><div>Игры</div></li>
+                    <li><div>Книги</div></li>
+                    <li><div>Костюмы</div></li>
+                    <li><div>Электроника</div>
+                        <ul>
+                            <li><div>Современные машины</div></li>
+                            <li><div>Дополнительные устройства</div></li>
+                        </ul>
+                    </li>
+                    <li><div>Обучающие фильмы</div></li>
+                    <li><div>Музыка</div>
+                        <ul>
+                            <li><div>Рок</div>
+                                <ul>
+                                    <li><div>Альтернатива</div></li>
+                                    <li><div>Классическая</div></li>
+                                </ul>
+                            </li>
+                            <li><div>Джаз</div>
+                                <ul>
+                                    <li><div>Свободный джаз</div></li>
+                                    <li><div>Big Band</div></li>
+                                </ul>
+                            </li>
+                            <li><div>Поп-ит</div></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </div>
+<div class="container text-white">
+    <h2>Новости</h2>
+    <div class="container news1">
+        <div class="container">
+            <div class="view">
+                <img src="woman2.jpg" alt="новость один">
+                <div class="mask">
+                    <h2>Новость</h2>
+                    <p>Израильские ученые спроецировали VR-дисплей прямо на ладонь</p>
+                    <a href="news.html" class="info">Читать далее</a>
+                </div>
+                <p>Израильские ученые спроецировали VR-дисплей прямо на ладонь</p>
+            </div>
+        </div>
+
+        <table>
+                <colgroup>
+                    <col span="2" style="background:rgb(24, 113, 124)">
+                    <col style="background-color:rgb(56, 14, 206)">
+                </colgroup>
+
+                <tr><th>Сфера применения</th><th>Количество денег</th><th>Количество пользователей</th></tr>
+                <tr><td>Мероприятия в прямом эфире</td><td>$4,1 млрд к 2025 году</td><td>95 млн пользователей</td></tr>
+                <tr><td>Видеоигры</td><td>$11,6 млрд к 2025 году</td><td>216 млн пользователей</td></tr>
+                <tr><td>Кино и сериалы</td><td>$3,2 млрд к 2025 году.</td><td>79 млн пользователей</td></tr>
+                <tr><td>Продажи</td><td>$1,6 млрд к 2025 году</td><td>32 млн пользователей</td></tr>
+                <tr><td>Продажа недвижимости</td><td>$2,6 млрд</td><td>300 тысяч пользователей к 2025 году</td></tr>
+                <tr><td>Образование</td><td>$700 млн в 2025 году</td><td>15 млн пользователей</td></tr>
+                <tr><td>Здравоохранение</td><td>$5,1 млрд к 2025 году</td><td>3,4 млн пользователей</td></tr>
+                <tr><td>Военная промышленность</td><td>$1,4 млрд к 2025 году</td><td>700 тысяч пользователей</td></tr>
+                <tr><td>Проектирование</td><td>$4,7 млрд к 2025 году</td><td>3,2 млн пользователей</td></tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

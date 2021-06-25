@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body onload="time()">
+
+<div class="preloader">
+    <div class="preloader__image"></div>
+</div>
+
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html"><button class="moving btn btn-info bg-gradient btn-md text-white" type="button">Главная</button></a>
+                <a class="text-white nav-item nav-link" href="article.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Занимательные статьи</button></a>
+                <a class="text-white nav-item nav-link" href="contact.html"><button class="btn btn-info bg-gradient btn-md text-white" type="button">Контакты</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+  <div class="container">
+      <div class="aaa3">
+          <h1 class="align-items-center">Израильские ученые спроецировали VR-дисплей прямо на ладонь </h1>
+      </div>
+
+        <div class="imgnews2  ">
+            <img class="row align-items-center" src="woman3.jpg">
+        </div>
+
+        <div class="content3" class="shadow-lg bg-primary">
+            <div class="row align-items-center">
+                <p class="mb-3 mt-2">Швейцарские и израильские ученые создали новый тип интерфейса для VR.</p>
+                <div class="mt-2 mb-2" id="bold">Новый шлем виртуальной реальности позволяет увидеть изображение на ладони, используемой в качестве контроллера.</div>
+                <div class="bg-secondary bg-gradient p-3">
+                    Управлять элементами VR-приложения можно простыми жестами — поворачиванием руки, сжиманием пальцев и т.п, передает vc.ru.
+                    Разработкой цифровых перчаток занимается группа энтузиастов из Швейцарской высшей технической школы Цюриха и Даниэль Зиссерман из Тель-Авивского университета.
+                    Они предложили интерфейс для VR-шлема, совмещающий прямое и дистанционное воздействия.
+                </div>
+            </div>
+            <p class="mt-2 fst-italic">В виде контроллера выступает рука, а интерфейс приложения проецируется на ладонь. Причем модель руки создается камерами шлема. Ладонь, по сути, заменяет смартфон.</p>
+        </div>
+
+                <section class="overflow-auto procrutka">
+                        <p class="procrutka">Добровольцы уже испытали разработку и в целом остались довольны результатами. Указали лишь на несколько недостатков. Так, в виртуальной реальности пользователи видят схематичную модель руки, а не собственную. Это снижает градус погружения в происходящее.</p>
+                </section>
+
+
+      <button id="toggle">Скрыть цитату</button>
+
+      <blockquote id="elem" class="mt-4 ml-5 mr-5 mb-5">
+          <p>Это очень крутая технология. Я и мои коллеги думаем, что за этой технологией будущее.</p>
+          <fo0ter>— <cite>Иван Иванов, <a class="fw-bold text-decoration-none text-white" href="preload.html"> Habr</a></cite></fo0ter>
+      </blockquote>
+      <script>
+          $('#toggle').click(function() {
+              $('#elem').fadeToggle(1000);
+
+          });
+      </script>
+
+      <div class=" text-white">
+          <h5>Подписка истечёт через <span id="t" style="font-size:20px"></span></h5>
+
+      </div>
+      <div class="row">
+          <table class="table col-sm aaa2">
+              <thead>
+              <tr>
+                  <th>#</th>
+                  <th>Имя</th>
+                  <th>Фамилия</th>
+                  <th>Никнейм</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>Бакар</td>
+                  <td>Бакров</td>
+                  <td>@ropnm</td>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>Джеронимо</td>
+                  <td>Черепахин</td>
+                  <td>@crysich</td>
+              </tr>
+
+              </tbody>
+          </table>
+          <form class="mr-4 col-sm-4 aaa1 text-white" name="form" onsubmit="return validate_form ( );">
+
+              <div class="mb-3">
+                  <label class="form-label fw-bold">Введите почту, чтобы подписаться на рассылку</label>
+                  <input type="form" placeholder="name@example.com" name="email" class="form-control">
+                  <div id="emailHelp">E-mail</div>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-chgeck-label" for="flexRadioDefault1">
+                      Я согласен(-на) на обработку персональных данных
+                  </label>
+              </div>
+              <p class="mt-4 fw-bold">Подписаться на определённую рассылку</p>
+              <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" name="vr" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">
+                      VR-интерфейсы
+                  </label>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" name="ar" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                      AR-интерфейсы
+                  </label>
+              </div>
+
+              <button type="submit" class="btn text-white btn-info ">Подтвердить</button>
+          </form>
+      </div>
+  </div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#draggable" ).draggable();
+    } );
+</script>
+
+
+<a target="_blank" href="https://habr.com/ru/company/mailru/blog/195642/"><div id="draggable" class="tuna"></div></a>
+
+    <footer class="footer bd-info mt-4">
+        <div class="container">
+            <div class=" pt-4 row">
+                <span><a class=" pt-4 text-decoration-none text-white" href="index.html">Главная</a></span>
+                <span><a class="text-decoration-none text-white" href="article.html">Занимательные статьи</a></span>
+                <span>©Tuchenka</span>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="js/mouseover.js"></script>
+<script src="js/script.js"></script>
+<script src="js/form.js"></script>
+<script src="js/preloader.js"></script>
+</body>
+</html>
